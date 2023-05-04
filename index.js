@@ -1,4 +1,17 @@
 const gridContainer = document.querySelector('.grid-container');
+const newGridButton = document.querySelector('.new-grid-button');
+
+newGridButton.addEventListener('click', newGridHandler);
+
+function newGridHandler() {
+  const size = parseInt(prompt('How big should your grid be?'));
+  clearGrid();
+  generateGrid(size);
+}
+
+function clearGrid() {
+  gridContainer.innerHTML = '';
+}
 
 function generateGrid(size) {
   gridContainer.style.gridTemplateColumns = `repeat(${size}, 1fr)`;

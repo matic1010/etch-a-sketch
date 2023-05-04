@@ -1,16 +1,23 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
 header {
   text-align: center;
 }
 
 main {
+  margin-top: 32px;
   display: flex;
-  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .grid-container {
   display: grid;
   height: 500px;
   width: 500px;
+  margin: 64px;
 }
 
 .cell {
