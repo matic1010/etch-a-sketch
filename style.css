@@ -1,3 +1,12 @@
+header {
+  text-align: center;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+}
+
 .grid-container {
   display: grid;
   height: 500px;
@@ -6,4 +15,8 @@
 
 .cell {
   border: 1px solid black;
+}
+
+.filled {
+  background-color: black;
 }
