@@ -1,6 +1,9 @@
 body {
+  font-family: Arial, Helvetica, sans-serif;
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
 }
 
 #grid {
@@ -8,8 +11,13 @@ body {
   height: 600px;
   width: 600px;
   border: 1px solid black;
-  grid-template-columns: repeat(4, 1fr);
   gap: 1px;
+}
+
+#new-grid-button {
+  margin-bottom: 8px;
+  padding: 8px 20px;
+  font-weight: 700;
 }
 
 .colored {
